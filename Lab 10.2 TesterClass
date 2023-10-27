@@ -1,0 +1,29 @@
+import chn.util.*;
+public class PicturesTest                                                           // New public class
+{
+  public static void main (String[] args)                                           // New main method
+  {
+    ConsoleIO keyboard = new ConsoleIO();                                           // new ConsoleIO Keyboard
+    String get;                                                                     // String is a get
+    
+    System.out.println("output is frozen, press enter to get picture. ");           // freezes the output until enter is pressed
+    get = keyboard.readLine();                                                      // freezes the output screen to see the picture 
+    Tester.printTable(4,6);                                                         // new table with 4 collumns 6 rows                                                         
+    System.out.println();                                                           // prints a blank line
+    
+    System.out.println("output is frozen, press enter to get picture. ");           // freezes the output until enter is pressed
+    get = keyboard.readLine();                                                      // freezes the output screen to see the picture
+    Tester.printTable(12,12);                                                       // new table with 12 collumns 12 rows      
+    System.out.println();                                                           // prints a blank line
+    
+    System.out.println("output is frozen, press enter to get picture. ");           // freezes the output until enter is pressed
+    get = keyboard.readLine();                                                      // freezes the output screen to see the picture
+    Tester.pyramid(4);                                                              // sets the row amount to 4
+    System.out.println();                                                           // prints a blank line
+    
+    System.out.println("output is frozen, press enter to get picture. ");           // freezes the output until enter is pressed
+    get = keyboard.readLine();                                                      // freezes the output screen to see the picture
+    Tester.pyramid(25);                                                             // sets the row amount to 25
+    
+  }
+}
