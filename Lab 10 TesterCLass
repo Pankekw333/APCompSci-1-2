@@ -1,0 +1,45 @@
+import apcslib.*;
+public class Tester                                                     // new class "Tester"
+{
+    public Tester()                                                     // default constructor
+    {
+        int line = 0;                                                   // sets int line to 0
+        int row = 0;                                                    // sets int row to 0
+    }
+    public static void pyramid(int lines)                               // new public static void method ( can be acessed without initializing and has nor eturn value )
+    {
+        int row, spaces, stars;                                         // sets int row, saces, stars col
+        for ( row = 1; row<= lines; row++)                              // for the row equalling 1 and when row is less than or equal to lines, run code, add 1 to row.
+        {
+            spaces = lines - row;                                       // spaces = lines - row
+            for (int a = 1; a <= spaces; a++)                           // for a is = 1 and a<= spaces, run code, add 1 to a.
+            {
+                System.out.print(" ");                                  // print a blank spaces
+            }
+            stars = (2 * row) -1 ;                                      // star amount = 2 * row -1
+            for (int b = 1; b <= stars; b++)                            // int b = 1 and b <= star amount, printout * and add 1 to b.
+            {
+                System.out.print("*");                                  // print "*"
+            }
+            System.out.println();                                       // print a blank line
+        }
+    }
+    public static void printTable(int collumns, int rows)               // new public static void method 
+    {       
+            System.out.print("     ");                                  // prints out 5 spaces
+            for(int l = 1; l <= rows; l++)                              // for l =1 and l<= rows, run code, add 1, until false.
+            {                            
+                    System.out.print(Format.right(l,5));                // print l formatted 5 right
+            }
+            System.out.println();                                       // prints a blank line
+            for (int a = 1; a <= collumns; a++)                         // for a =1 and a<= collumns, run code, add 1, until false.                         
+            {                       
+                System.out.print("\n"+ Format.right(a, 5));             // new line prints a formatted 5 right
+                for(int b = 1; b <= rows; b++)                          // when b = 1 and b<=1 run code, add 1 to b untl false
+                {
+                    System.out.print(Format.right(a * b, 5));           // print a * b formatted 5 right
+                }   
+            }
+    }
+
+}
